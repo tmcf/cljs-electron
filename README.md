@@ -16,7 +16,10 @@ My attempt to recreate ClojureScript development workflow while developing deskt
 ## Running it
 
 ```shell
-npm install electron-prebuilt -g # install electron binaries
+# electron-prebuilt deprecated
+npm install electron --save-dev
+#or
+yarn add electron --dev
 
 lein cooper                      # compile cljs and start figwheel
 electron .                       # start electron from another terminal
